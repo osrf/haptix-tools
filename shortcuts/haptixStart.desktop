@@ -1,1 +1,7 @@
-gazebo --verbose worlds/arat.world
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Terminal=true
+Name=haptixStart
+Icon=/usr/share/icons/haptix/gazebo.ico
+Exec=haptixStart
