@@ -1,0 +1,1 @@
+execute_process(COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/PostInstall.sh)
