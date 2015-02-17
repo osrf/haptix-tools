@@ -1,0 +1,7 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Terminal=true
+Name=virtualOSRF
+Icon=/usr/share/icons/haptix/osrf_logo_white.png
+Exec=haptixSupport
