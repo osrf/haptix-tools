@@ -14,7 +14,4 @@ install(PROGRAMS haptixSupport.desktop DESTINATION /home/haptix/Desktop)
 add_subdirectory(icons)
 
 # Change ownership of the .desktop launchers (from "root" to "haptix").
-add_custom_command(
-  TARGET ${PROJECT_NAME} POST_BUILD
-  COMMAND chown haptix:haptix /home/osrf/Desktop/haptixStart.desktop
-)
+install(CODE "chown haptix:haptix /home/osrf/Desktop/haptixStart.desktop")
