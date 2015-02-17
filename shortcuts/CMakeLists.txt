@@ -12,6 +12,3 @@ install(PROGRAMS haptixSupport.desktop DESTINATION /home/haptix/Desktop)
 
 # Install all the icons.
 add_subdirectory(icons)
-
-# Change ownership of the .desktop launchers (from "root" to "haptix").
-install(SCRIPT "${CMAKE_CURRENT_SOURCE_DIR}/PostInstall.cmake")
