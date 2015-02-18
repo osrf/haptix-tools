@@ -12,3 +12,7 @@ install(PROGRAMS haptixSupport.desktop DESTINATION /home/haptix/Desktop)
 
 # Install all the icons.
 add_subdirectory(icons)
+
+# Script to be executed at installation time to change the ownership of the
+# .desktop files.
+INSTALL(SCRIPT PostInstall.cmake)
