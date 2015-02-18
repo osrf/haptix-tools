@@ -3,3 +3,4 @@
 # Check for updates in the HAPTIX software.
 sudo apt-get update
 sudo apt-get install handsim
+rm -rf ~/.gazebo/models
