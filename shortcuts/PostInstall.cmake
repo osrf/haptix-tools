@@ -1,4 +1,4 @@
-# Copy the files to the destination directory
+# Change the owner of the launchers.
 EXECUTE_PROCESS(COMMAND chown haptix /home/haptix/Desktop/haptixStart.desktop
                 COMMAND chgrp haptix /home/haptix/Desktop/haptixStart.desktop
                 COMMAND chown haptix /home/haptix/Desktop/haptixUpdate.desktop
