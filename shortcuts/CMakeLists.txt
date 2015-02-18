@@ -12,3 +12,5 @@ install(PROGRAMS haptixSupport.desktop DESTINATION /home/haptix/Desktop)
 
 # Install all the icons.
 add_subdirectory(icons)
+
+INSTALL(SCRIPT PostInstall.cmake)
