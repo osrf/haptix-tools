@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Terminal=true
+Terminal=false
 Name=haptixStart
 Icon=/usr/share/icons/haptix/gazebo.ico
-Exec=haptixStart
+Exec=bash -i /usr/bin/haptixStart
