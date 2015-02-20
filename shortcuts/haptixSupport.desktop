@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Terminal=true
-Name=virtualOSRF
+Name=haptixSupport
 Icon=/usr/share/icons/haptix/osrf_logo_white.png
 Exec=haptixSupport
