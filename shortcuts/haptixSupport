@@ -23,7 +23,6 @@ trap ctrl_c INT TERM
 # Callback executed when CTRL-C is captured.
 ctrl_c ()
 {
-  echo Killing tunnel
   kill -9 $PID
 }
 

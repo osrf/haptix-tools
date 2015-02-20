@@ -17,4 +17,4 @@
 ## Author: Open Source Robotics Foundation.
 ## Description: Start gazebo with the environment for the HAPTIX project.
 
-gazebo --verbose worlds/arat.world
+gazebo worlds/arat.world $@
