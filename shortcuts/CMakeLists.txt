@@ -1,3 +1,7 @@
+# Script to be executed at installation time to change the ownership of the
+# .desktop files.
+INSTALL(SCRIPT PreInstall.cmake)
+
 # Install the script for starting Gazebo.
 install(PROGRAMS haptixStart DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
 install(PROGRAMS haptixStart.desktop DESTINATION /home/haptix/Desktop)
