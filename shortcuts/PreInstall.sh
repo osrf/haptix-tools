@@ -17,16 +17,15 @@
 ## Author: Open Source Robotics Foundation.
 ## Description: Create the "haptix" user and SSH keys if needed.
 
-NEW_USER=0
-
 # Check if there is a "haptix" user
 getent passwd haptix > /dev/null
 
 if [ $? -ne 0 ]; then
   # Create the "haptix" user add the user to the "sudo" group.
+  echo "You don't have a "haptix" user. Creating it..."
   useradd -m haptix -G sudo -s /bin/bash
-
-  NEW_USER=1
+  echo "Please, enter a password for the "haptix" user."
+  passwd haptix
 fi
 
 # Check if the user has a SSH key pair.
@@ -35,8 +34,3 @@ if [ ! -f /home/haptix/.ssh/id_rsa.pub ]; then
   su haptix -c "ssh-keygen -q -t rsa -N \"\" -f /home/haptix/.ssh/id_rsa"
 fi
 
-if [ $NEW_USER -eq 1 ]; then
-  # Tell the user to create a password for the "haptix" user.
-  echo "Don't forget to create a password for the haptix user:"
-  echo "  sudo passwd haptix"
-fi
