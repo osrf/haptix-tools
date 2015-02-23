@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Terminal=true
+Name=checkStereo
+Icon=/usr/share/icons/haptix/osrf_logo_white.png
+Exec=glxgears -stereo
