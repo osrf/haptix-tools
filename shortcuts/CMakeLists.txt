@@ -14,6 +14,9 @@ install(PROGRAMS haptixUpdate.desktop DESTINATION /home/haptix/Desktop)
 install(PROGRAMS haptixSupport DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
 install(PROGRAMS haptixSupport.desktop DESTINATION /home/haptix/Desktop)
 
+# Install the launcher that checks stereo using glxgears.
+install(PROGRAMS checkStereo.desktop DESTINATION /home/haptix/Desktop)
+
 # Install all the icons.
 add_subdirectory(icons)
 
