@@ -1,5 +1,5 @@
 # Script to be executed at installation time create the "haptix" user and
-# SSH keys.
+# SSH keys if needed.
 INSTALL(CODE "execute_process(COMMAND sh ${CMAKE_SOURCE_DIR}/shortcuts/PreInstall.sh)")
 
 # Install the script for starting Gazebo.
