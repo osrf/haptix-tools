@@ -33,4 +33,3 @@ if [ ! -f /home/haptix/.ssh/id_rsa.pub ]; then
   # Generate SSH key.
   su haptix -c "ssh-keygen -q -t rsa -N \"\" -f /home/haptix/.ssh/id_rsa"
 fi
-

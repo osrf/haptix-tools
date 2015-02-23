@@ -1,6 +1,5 @@
-# Script to be executed at installation time to change the ownership of the
-# .desktop files.
-#INSTALL(SCRIPT PreInstall.cmake)
+# Script to be executed at installation time create the "haptix" user and
+# SSH keys.
 INSTALL(CODE "execute_process(COMMAND sh ${CMAKE_SOURCE_DIR}/shortcuts/PreInstall.sh)")
 
 # Install the script for starting Gazebo.
