@@ -3,8 +3,12 @@
 INSTALL(CODE "execute_process(COMMAND sh ${CMAKE_SOURCE_DIR}/shortcuts/PreInstall.sh)")
 
 # Install the script for starting Gazebo.
-install(PROGRAMS haptixStart DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
-install(PROGRAMS haptixStart.desktop DESTINATION /home/haptix/Desktop)
+install(PROGRAMS haptixMPLStart DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
+install(PROGRAMS haptixMPLStart.desktop DESTINATION /home/haptix/Desktop)
+install(PROGRAMS haptixLukeRightStart DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
+install(PROGRAMS haptixLukeRightStart.desktop DESTINATION /home/haptix/Desktop)
+install(PROGRAMS haptixLukeLeftStart DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
+install(PROGRAMS haptixLukeLeftStart.desktop DESTINATION /home/haptix/Desktop)
 
 # Install the script that checks for updates in our software.
 install(PROGRAMS haptixUpdate DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)

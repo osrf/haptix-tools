@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+Name=haptixLukeRightStart
+Icon=/usr/share/icons/haptix/gazebo.ico
+Exec=bash -i /usr/bin/haptixLukeRightStart

@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Terminal=false
-Name=haptixStart
+Name=haptixLukeLeftStart
 Icon=/usr/share/icons/haptix/gazebo.ico
-Exec=bash -i /usr/bin/haptixStart
+Exec=bash -i /usr/bin/haptixLukeLeftStart
