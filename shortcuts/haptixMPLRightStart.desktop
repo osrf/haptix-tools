@@ -3,4 +3,4 @@ Type=Application
 Terminal=false
 Name=haptixMPLStart
 Icon=/usr/share/icons/haptix/gazebo.ico
-Exec=bash -i /usr/bin/haptixMPLStart
+Exec=bash -i /usr/bin/haptixMPLRightStart
